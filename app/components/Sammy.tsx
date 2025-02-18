@@ -153,7 +153,7 @@ const Sammy = ({intro: Intro, paused: Paused, dead: Dead, awaitingNextLevel: Awa
   const createTarget = () => {
     if (!target.exists) {
       let isValidPosition = false;
-      let newTarget = {
+      const newTarget = {
         x: 0,
         y: 0,
         exists: true,

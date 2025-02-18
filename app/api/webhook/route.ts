@@ -42,7 +42,11 @@ async function verifyFidOwnership(fid: number, appKey: `0x${string}`) {
   return false;
 }
 
-async function verifyTwo(requestJson: any) {
+async function verifyTwo(requestJson: {
+  header: string;
+  payload: string;
+  signature: string;
+}) {
   const {
     header: encodedHeader,
     payload: encodedPayload,

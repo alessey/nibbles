@@ -1,9 +1,9 @@
 import { useAccount } from "wagmi";
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { getTopScores, addScore, MAX_SCORES } from "@/lib/scores-client";
 import { useMiniKit, useNotification } from "@coinbase/onchainkit";
 import { Transaction, TransactionButton, TransactionResponse, TransactionToast, TransactionToastAction, TransactionToastIcon, TransactionToastLabel } from "@coinbase/onchainkit/transaction";
-import { encodeAbiParameters, TransactionReceipt } from "viem";
+import { encodeAbiParameters } from "viem";
 
 const SCHEMA_UID = "0xf58b8b212ef75ee8cd7e8d803c37c03e0519890502d5e99ee2412aae1456cafe";
 const EAS_CONTRACT = "0x4200000000000000000000000000000000000021";
